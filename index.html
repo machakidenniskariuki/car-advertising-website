@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW cars</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="body">
+    <nav>
+        <div class="logo">
+            <img src="images/mercedes-benz-logo-png_seeklogo-91081.png" >
+        </div>
+        <ul class="navbar ">  
+            <li><a href="index.html" class="active" target="_blank">Home</a></li>
+            <li><a href="model.html" target="_blank">Models</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+            <li><a href="contact.html" target="_blank">Contact Us</a></li>
+            <li><a href="reviews.html" target="_blank">Reviews</a></li>            
+                </ul>
+                <div class="header_icons">
+                   
+                    <a href="https://wa.me/+254748673967" target="_blank">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                  
+                    <a href="https://twitter.com/denni-kash254" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                  
+                    <a href="https://www.instagram.com/deniskariuki" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+                
+    </nav>
+    
+     <section class="home" id="home">
+
+        <div class="image-section">
+            <img src="images/eclassmercedesbenzneweclassleftfrontthreequarter0.jpeg" alt="Mercedes-Benz Logo">
+        </div>
+
+        <div class="carousel">
+            <button class="carousel-arrow left">&#9664;</button>
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="images/gclassgclassleftsideview.jpeg" alt="Mercedes EQE SUV">
+                 <div class="overlay"> <h1>stunning luxury is within reach</h1>
+                    <p>your moment has finally arrived. <br>get exceptional offers</p>
+                    <a href="https://wa.me/+254748673967?text=Is%20this%20Mercedes%20EQE%20SUV%20available%3F" class="order-button" target="_blank">Order Now</a>
+                 </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gclassgclassfrontview.jpeg" alt="Mercedes EQS SUV Maybach">
+                    <a href="https://wa.me/+254748673967?text=Is%20this%20Mercedes%20EQE%20SUV%20available%3F" class="order-button" target="_blank">Order Now</a>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/gclassgclassfrontrowseats.jpeg" alt="Mercedes GLC SUV">
+                </div>
+            </div>
+            <button class="carousel-arrow right">&#9654;</button>
+        </div>
+
+        <div class="creata">
+            <div class="textoverlay">
+              <h1 style="color: rgb(27, 192, 27);">Stunning luxury is within reach</h1>
+              <p>Your moment has finally arrived. <br>Get exceptional offers</p>
+              <a href="https://wa.me/+254748673967?text=Is%20this%20Mercedes%20EQE%20SUV%20available%3F" class="order-button" target="_blank">Order Now</a>
+            </div>
+            <img src="images/gclassmercedesbenzg63amgnewexterior.jpeg" alt="Mercedes EQE SUV" />
+          </div>
+          
+          <div class="creata">
+            <div class="textoverlay">
+              <h1 style="color: rgb(27, 192, 27);">Stunning luxury is within reach</h1>
+              <p>Your moment has finally arrived. <br>Get exceptional offers</p>
+              <a href="https://wa.me/+254748673967?text=Is%20this%20Mercedes%20EQE%20SUV%20available%3F" class="order-button" target="_blank">Order Now</a>
+            </div>
+            <img src="images/maybachglsmaybachglsfrontview.jpeg" alt="Mercedes EQE SUV" />
+          </div>
+
+
+
+
+     </section>
+
+     <footer class="site-footer">
+        <div class="footer-container">
+          <p>&copy; 2025 Mercedes-Benz Dealers. All Rights Reserved.</p>
+          <p>
+            <a href="privacypolicy.html" target="_blank"><i class="fas fa-user-secret"></i> Privacy Policy</a> |
+            <a href="terms.html" target="_blank"><i class="fas fa-file-alt"></i> Terms of Use</a> |
+            <a href="https://wa.me/+254748673967" target="_blank"><i class="fab fa-whatsapp"></i> Contact Us</a>
+          </p>
+        </div>
+      </footer>
+      
+      
+      
+   
+    </div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const items = Array.from(track.children);
+        let currentIndex = 0;
+    
+        const updateCarousel = () => {
+            const itemWidth = items[0].getBoundingClientRect().width;
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        };
+    
+        const autoScroll = () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel();
+        };
+    
+        setInterval(autoScroll, 5000); // Automatically scroll every 2 seconds
+    </script>
+</body>    
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    
+}
+.header marquee{
+    color: #cc1a1a;
+}
+.header h1{
+    font-size: 2.5rem;
+    color: #4e36b9;
+}
+.cantainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.header {
+    background-color: #15e915;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "press start 2p";
+    font-size: large;
+}
+.cars {
+    display: flex;
+    margin-top: 20px;
+}
+.mercedes {
+    flex: 1;
+    padding: 10px;
+    margin-right: 20px;
+    
+}
+.Range {
+    flex:1;
+    padding: 20px;
+  
+}
+.footer {
+    background-color: #6ba025;
+    color: rgb(23, 216, 88);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    color: #b4d84f;
+}
+p {
+    font-size: 1.1rem;
+    color: #19214d;
+}
+
+.car{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+img{
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+}
+.car3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.car2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+.last{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.last p{
+    font-size: 1.3rem;
+    color: #ac8b61;
+}

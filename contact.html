@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="index.css"> 
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <section id="contact" class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +254 748 673 967</p>
+        <p><strong>Email:</strong>machakidennis@zetech.ac.ke</p>
+        <p><strong>Address:</strong> 123 Luxury Lane, Nairobi, Kenya</p>
+      </div>
+
+
+      <form class="contact-form" action="/submit-contact" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
